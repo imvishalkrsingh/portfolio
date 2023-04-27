@@ -19,13 +19,16 @@ html,body{
 }
 .container{
     width: 1200px;
+    height: 100vh;
     margin: 0 auto;
+    /* border: 2px solid green; */
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 1.5rem;
+    /* border: 2px solid black; */
 }
 .logo-container{
     display: flex;
@@ -55,17 +58,32 @@ html,body{
 .nav-items a:hover{
     color: #000;
 }
-
-.hero-section{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    gap: 5rem;
-    margin: 5rem auto;
-    padding: 0 1rem;
-    padding-bottom: 8rem;
+#welcome{
+  width: 100%;
+  height: 200px;
+  /* border: 2px solid purple */
 }
+#welcome h1{
+  position: relative;
+  font-size: 10vw;
+  color: #efeff3;
+  bottom: -120px;
+  background-color: transparent;
+}
+.hero-section{
+    width: 100%;
+    height: 460px;
+    /* position: relative; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-self: center; */
+    /* gap: 5rem; */
+    /* margin: 16.8rem auto 0 auto; */
+    padding: 0 1rem;
+    /* padding-bottom: 8rem; */
+    /* border: 2px solid red; */
+}
+
 .faded-text{
     user-select: none;
     font-size: 7em;
@@ -142,9 +160,9 @@ html,body{
     position: relative;
     width: 300px;
     height: 300px;
-    background-image: url(images/vishal\ singh.jpg);
+    background-image: url(images/vishall.png);
     background-size: cover;
-    background-position-y: center;
+    background-position-x: center;
     border-radius: 50%;
 }
 .hero-section-right:hover{
@@ -165,7 +183,7 @@ html,body{
 
 .project-section{
     background-color: rgb(231,231,231);
-    margin-top:4rem;
+    /* margin-top:4rem; */
   }
 
   .page-header{
@@ -298,6 +316,13 @@ html,body{
     display:flex;
     gap:0.9rem;
     align-items:center;
+  }
+  #liveNow a{
+    text-decoration: none;
+    color: #fff;
+  }
+  #liveNow a:hover{
+    color: black;
   }
 
   .btn-project:hover{
@@ -548,9 +573,11 @@ html,body{
 footer{
   position:relative;
   margin-top:-1px;
-  background-color: #343d68;
+  /* background-color: #343d68; */
+  background-color: #000000e0;
   padding:5rem;
 }
+
 
 .footer-wrapper{
   display:flex;
@@ -563,7 +590,9 @@ footer{
 .footer-faded-text{
   position:absolute;
   left:0;
-  bottom:0;color:#535c87;
+  bottom:0;
+  /* color:#535c87; */
+  color: grey;
   user-select:none;
   font-size:5em;
 }
@@ -580,4 +609,8 @@ footer{
 
 .link-wrapper div a:hover{
   color:var(--bgOrange);
+}
+
+#social-media a{
+  padding-left: 10px;
 }
